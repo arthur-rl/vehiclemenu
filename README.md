@@ -6,7 +6,7 @@ Features of this resource:
 * Save your vehicle
 * Toggle the engine on and off
 * Open and close doors
-* Faster then then the original vehcontrol see [here](https://arthurl.is-inside.me/LzpcqL7k.mp4)
+* Faster then then the original [vehcontrol](https://forum.cfx.re/t/release-vehicle-controls-gui-v2/5211) see [here](https://arthurl.is-inside.me/LzpcqL7k.mp4)
 
 Installation:
 * Download or clone [RageUI](https://github.com/iTexZoz/RageUI)
