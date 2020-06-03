@@ -126,7 +126,7 @@ doorStatus = {
     [7] = false
 }
 function doorList() 
-    RageUI.List("Toggle Door", cardoors, index.door, nil,true, function(Hovered, Active, Selected, Index)
+    RageUI.List("Toggle Door", cardoors, index.door,nil, {},true,function(Hovered, Active, Selected, Index)
         if (Selected) then
             if doorStatus[Index] then
                 if savedvehicle ~= nil then 
@@ -191,4 +191,3 @@ Citizen.CreateThread(function()
     end
 
 end)
-
