@@ -39,7 +39,7 @@ engineStatus = {
     [1] = true
 }
 function tglEngine() 
-    RageUI.Button("Toggle Engine" , "Turn Engine on or off", {}, true, function(Hovered, Active, Selected)
+    RageUI.Button("Toggle Engine" , "Turn Engine on or off",true, function(Hovered, Active, Selected)
         if (Selected) then
             if engineStatus[1] then
                 if savedvehicle ~= nil then 
@@ -74,7 +74,7 @@ lockStatus = {
     [1] = false
 }
 function tglDoorLocks() 
-    RageUI.Button("Toggle Door Locks" , nil, {}, true, function(Hovered, Active, Selected)
+    RageUI.Button("Toggle Door Locks" , nil,true, function(Hovered, Active, Selected)
         if Selected then
             if lockStatus[1] then
                 if savedvehicle ~= nil then 
@@ -126,7 +126,7 @@ doorStatus = {
     [7] = false
 }
 function doorList() 
-    RageUI.List("Toggle Door", cardoors, index.door, nil, {}, true, function(Hovered, Active, Selected, Index)
+    RageUI.List("Toggle Door", cardoors, index.door, nil,true, function(Hovered, Active, Selected, Index)
         if (Selected) then
             if doorStatus[Index] then
                 if savedvehicle ~= nil then 
@@ -158,7 +158,7 @@ function doorList()
 end
 
 function savedvehiclebtn()
-    RageUI.Button("Save Current Vehicle" , nil, {}, true, function(Hovered, Active, Selected)
+    RageUI.Button("Save Current Vehicle" , nil,true, function(Hovered, Active, Selected)
         if Selected then
             if IsPedInAnyVehicle(ped, true) then 
                 savedvehicle = GetVehiclePedIsIn(ped, false)
